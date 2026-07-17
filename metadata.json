@@ -1,0 +1,6 @@
+{
+  "name": "Digitalonix",
+  "description": "Premium digital agency website for Digitalonix.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
