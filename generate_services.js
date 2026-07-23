@@ -21,23 +21,6 @@ import social_media_hero from '@/assets/images/social_media_hero_1784322903154.j
 import website_design_hero from '@/assets/images/website_design_hero_1784322913631.jpg';
 import graphic_design_hero from '@/assets/images/graphic_design_hero_1784322924334.jpg';
 import google_ads_hero from '@/assets/images/google_ads_hero_1784322935867.jpg';
-import mobile_app_hero from '@/assets/images/mobile_app_hero_1784322945813.jpg';
-import software_dev_hero from '@/assets/images/software_dev_hero_1784322956930.jpg';
-import branding_hero from '@/assets/images/branding_hero_1784322971222.jpg';
-import ecommerce_hero from '@/assets/images/ecommerce_hero_1784322982398.jpg';
-
-const imageMap: Record<string, string> = {
-  'digital_marketing_hero_1784322879394.jpg': digital_marketing_hero,
-  'seo_hero_1784322891309.jpg': seo_hero,
-  'social_media_hero_1784322903154.jpg': social_media_hero,
-  'website_design_hero_1784322913631.jpg': website_design_hero,
-  'graphic_design_hero_1784322924334.jpg': graphic_design_hero,
-  'google_ads_hero_1784322935867.jpg': google_ads_hero,
-  'mobile_app_hero_1784322945813.jpg': mobile_app_hero,
-  'software_dev_hero_1784322956930.jpg': software_dev_hero,
-  'branding_hero_1784322971222.jpg': branding_hero,
-  'ecommerce_hero_1784322982398.jpg': ecommerce_hero,
-};
 
 export interface ServiceData {
   id: string;
@@ -45,7 +28,7 @@ export interface ServiceData {
   description: string;
   h1: string;
   subtitle: string;
-  heroImage: string;
+  heroImage?: string;
   overview: string;
   whoNeedsIt: string;
   impact: string;
@@ -124,7 +107,7 @@ for (const s of services) {
 servicesData += `];
 
 export const servicesData = rawServices.reduce((acc, service) => {
-  acc[service.id] = service as ServiceData;
+  acc[service.id] = service;
   return acc;
 }, {} as Record<string, ServiceData>);
 `;

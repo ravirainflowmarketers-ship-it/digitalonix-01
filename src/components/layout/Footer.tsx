@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Logo from '@/components/Logo';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,12 +13,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                d
+              <Logo className="w-12 h-12" />
+              <div className="flex flex-col">
+                <span className="text-2xl font-bold tracking-tight text-white leading-none">
+                  Digitalonix
+                </span>
               </div>
-              <span className="text-2xl font-bold tracking-tight text-white">
-                Digitalonix
-              </span>
             </Link>
             <p className="text-gray-400 mb-6 leading-relaxed">
               We are a premium digital agency transforming businesses through innovative web development, strategic SEO, and data-driven marketing.
@@ -29,6 +30,9 @@ export default function Footer() {
               <a href="https://instagram.com/digitalonix.in" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
+              <a href="https://www.linkedin.com/in/ariz-khan-b02666318/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-purple-600 hover:text-white transition-colors">
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
 
@@ -37,10 +41,12 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-4">
               <li><Link to="/digital-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Digital Marketing</Link></li>
-              <li><Link to="/website-design-company-in-bhopal" className="hover:text-purple-400 transition-colors">Website Design</Link></li>
-              <li><Link to="/seo-company-in-bhopal" className="hover:text-purple-400 transition-colors">SEO Services</Link></li>
+              <li><Link to="/ai-automations" className="hover:text-purple-400 transition-colors">AI Automations</Link></li>
+              <li><Link to="/google-ads-agency-in-bhopal" className="hover:text-purple-400 transition-colors">Paid Ads</Link></li>
               <li><Link to="/social-media-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Social Media Marketing</Link></li>
-              <li><Link to="/mobile-app-development-company-in-bhopal" className="hover:text-purple-400 transition-colors">Mobile App Development</Link></li>
+              <li><Link to="/google-my-business" className="hover:text-purple-400 transition-colors">Google My Business</Link></li>
+              <li><Link to="/seo-company-in-bhopal" className="hover:text-purple-400 transition-colors">SEO</Link></li>
+              <li><Link to="/website-design-company-in-bhopal" className="hover:text-purple-400 transition-colors">Website Design</Link></li>
             </ul>
           </div>
 

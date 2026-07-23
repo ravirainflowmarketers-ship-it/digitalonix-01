@@ -135,9 +135,16 @@ export default function Contact() {
                         <select className="flex h-12 w-full rounded-md border border-gray-200 bg-gray-50 px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-purple-600 focus:bg-white">
                           <option value="">Select a service...</option>
                           <option value="digital-marketing">Digital Marketing</option>
+                          <option value="ai-automations">AI Automations</option>
+                          <option value="paid-ads">Paid Ads</option>
+                          <option value="social-media">Social Media Marketing</option>
+                          <option value="gmb">Google My Business</option>
+                          <option value="seo">SEO</option>
                           <option value="web-design">Website Design</option>
-                          <option value="seo">SEO Services</option>
-                          <option value="mobile-app">Mobile App Development</option>
+                          <option value="pr-management">PR Management</option>
+                          <option value="content-creation">Content Creation</option>
+                          <option value="video-editing">Video Editing</option>
+                          <option value="graphic-design">Graphic Designing</option>
                           <option value="other">Other</option>
                         </select>
                       </div>

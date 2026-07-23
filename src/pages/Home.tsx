@@ -1,5 +1,23 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence, useInView, useMotionValue, useTransform, animate } from 'framer-motion';
+
+function CountUp({ to, duration = 2, decimals = 0 }: { to: number; duration?: number; decimals?: number }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-50px" });
+  
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => latest.toFixed(decimals));
+
+  useEffect(() => {
+    if (inView) {
+      const controls = animate(count, to, { duration, ease: "easeOut" });
+      return controls.stop;
+    }
+  }, [count, inView, to, duration]);
+
+  return <motion.span ref={ref}>{rounded}</motion.span>;
+}
+
 import { Link } from 'react-router-dom';
 import { 
   ArrowRight, CheckCircle, Star, Monitor, ShoppingCart, Search, 
@@ -7,23 +25,24 @@ import {
   Globe, Edit3, LayoutTemplate, Shield, Plus, Minus,
   HeartPulse, Home as HomeIcon, GraduationCap, ShoppingBag, Landmark, 
   Utensils, Plane, Cpu, Factory, Scale, Dumbbell, Sparkles,
-  Zap, BarChart, Lock, Lightbulb, Users, Clock
+  Zap, BarChart, Lock, Lightbulb, Users, Clock, Bot, Target, MapPin, Megaphone, PenTool, Video
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SEO from '@/components/SEO';
 import whyChooseUsImg from '@/assets/images/digitalonix_why_choose_us_1784320442503.jpg';
 
 const services = [
-  { icon: LayoutTemplate, title: 'Website Design', desc: 'Stunning, user-centric designs that convert visitors.', color: 'bg-purple-100 text-purple-600', group: 'group-hover:bg-purple-600 group-hover:text-white', path: '/website-design-company-in-bhopal' },
-  { icon: ShoppingCart, title: 'E-commerce Development', desc: 'Robust online stores optimized for sales and growth.', color: 'bg-emerald-100 text-emerald-600', group: 'group-hover:bg-emerald-600 group-hover:text-white', path: '/ecommerce-development-company-in-bhopal' },
-  { icon: Search, title: 'SEO Services', desc: 'Data-driven SEO strategies to dominate search rankings.', color: 'bg-orange-100 text-orange-600', group: 'group-hover:bg-orange-600 group-hover:text-white', path: '/seo-company-in-bhopal' },
-  { icon: TrendingUp, title: 'Digital Marketing', desc: 'Comprehensive campaigns that drive measurable ROI.', color: 'bg-red-100 text-red-600', group: 'group-hover:bg-red-600 group-hover:text-white', path: '/digital-marketing-company-in-bhopal' },
-  { icon: Share2, title: 'Social Media Marketing', desc: 'Engaging content and strategies to build your audience.', color: 'bg-pink-100 text-pink-600', group: 'group-hover:bg-pink-600 group-hover:text-white', path: '/social-media-marketing-company-in-bhopal' },
-  { icon: MousePointerClick, title: 'Google Ads', desc: 'Targeted ad campaigns designed to maximize conversions.', color: 'bg-yellow-100 text-yellow-600', group: 'group-hover:bg-yellow-600 group-hover:text-white', path: '/google-ads-agency-in-bhopal' },
-  { icon: Palette, title: 'Branding & Logo Design', desc: 'Memorable brand identities that stand out in the market.', color: 'bg-indigo-100 text-indigo-600', group: 'group-hover:bg-indigo-600 group-hover:text-white', path: '/branding-agency-in-bhopal' },
-  { icon: Smartphone, title: 'Mobile App Development', desc: 'Intuitive iOS and Android apps for seamless experiences.', color: 'bg-teal-100 text-teal-600', group: 'group-hover:bg-teal-600 group-hover:text-white', path: '/mobile-app-development-company-in-bhopal' },
-  { icon: Monitor, title: 'Software Development', desc: 'Custom, high-performance web solutions built for scale.', color: 'bg-blue-100 text-blue-600', group: 'group-hover:bg-blue-600 group-hover:text-white', path: '/software-development-company-in-bhopal' },
-  { icon: Edit3, title: 'Graphic Design', desc: 'Creative graphic design to leave a lasting impression.', color: 'bg-rose-100 text-rose-600', group: 'group-hover:bg-rose-600 group-hover:text-white', path: '/graphic-design-company-in-bhopal' },
+  { icon: TrendingUp, title: 'Digital Marketing', desc: 'Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.', color: 'bg-red-100 text-red-600', group: 'group-hover:bg-red-600 group-hover:text-white', path: '/digital-marketing-company-in-bhopal' },
+  { icon: Bot, title: 'AI Automations', desc: 'Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.', color: 'bg-indigo-100 text-indigo-600', group: 'group-hover:bg-indigo-600 group-hover:text-white', path: '#' },
+  { icon: Target, title: 'Paid Ads', desc: 'High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales.', color: 'bg-yellow-100 text-yellow-600', group: 'group-hover:bg-yellow-600 group-hover:text-white', path: '/google-ads-agency-in-bhopal' },
+  { icon: Share2, title: 'Social Media Marketing', desc: 'Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities.', color: 'bg-pink-100 text-pink-600', group: 'group-hover:bg-pink-600 group-hover:text-white', path: '/social-media-marketing-company-in-bhopal' },
+  { icon: MapPin, title: 'Google My Business Optimization', desc: 'Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads.', color: 'bg-emerald-100 text-emerald-600', group: 'group-hover:bg-emerald-600 group-hover:text-white', path: '#' },
+  { icon: Search, title: 'SEO', desc: 'Data-driven SEO strategies to improve rankings, increase organic traffic, and boost long-term online visibility.', color: 'bg-orange-100 text-orange-600', group: 'group-hover:bg-orange-600 group-hover:text-white', path: '/seo-company-in-bhopal' },
+  { icon: LayoutTemplate, title: 'Website Design', desc: 'Conversion-focused, modern, and responsive websites designed to elevate your brand and turn visitors into customers.', color: 'bg-purple-100 text-purple-600', group: 'group-hover:bg-purple-600 group-hover:text-white', path: '/website-design-company-in-bhopal' },
+  { icon: Megaphone, title: 'PR Management', desc: 'Strategic media placements and brand positioning to build credibility, authority, and public trust.', color: 'bg-blue-100 text-blue-600', group: 'group-hover:bg-blue-600 group-hover:text-white', path: '#' },
+  { icon: PenTool, title: 'Content Creation', desc: 'High-quality, engaging content tailored for websites, ads, and social media to strengthen brand messaging and audience connection.', color: 'bg-cyan-100 text-cyan-600', group: 'group-hover:bg-cyan-600 group-hover:text-white', path: '#' },
+  { icon: Video, title: 'Video Editing', desc: 'Professional video editing that enhances storytelling, boosts engagement, and increases social media performance.', color: 'bg-rose-100 text-rose-600', group: 'group-hover:bg-rose-600 group-hover:text-white', path: '#' },
+  { icon: Palette, title: 'Graphic Designing', desc: 'Creative and impactful visuals including branding, social media creatives, ads, and marketing materials.', color: 'bg-teal-100 text-teal-600', group: 'group-hover:bg-teal-600 group-hover:text-white', path: '/graphic-design-company-in-bhopal' },
 ];
 
 const features = [
@@ -163,22 +182,41 @@ export default function Home() {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto border-t border-white/10 pt-12">
+            <motion.div 
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: { staggerChildren: 0.2 }
+                }
+              }}
+              className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto border-t border-white/10 pt-12"
+            >
               {[
-                { label: 'Projects Delivered', value: '200+' },
-                { label: 'Happy Clients', value: '150+' },
-                { label: 'Google Rating', value: '4.9', suffix: '★' },
-                { label: 'Support Available', value: '24/7' }
+                { label: 'Projects Delivered', value: 200, suffix: '+' },
+                { label: 'Happy Clients', value: 150, suffix: '+' },
+                { label: 'Google Rating', value: 4.9, suffix: '★', decimals: 1 },
+                { label: 'Support Available', value: 24, suffix: '/7' }
               ].map((stat, i) => (
-                <div key={i} className="text-center group">
+                <motion.div 
+                  key={i} 
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+                  }}
+                  className="text-center group"
+                >
                   <div className="text-4xl md:text-5xl font-bold text-white mb-2 flex items-center justify-center">
-                    {stat.value}
+                    <CountUp to={stat.value} decimals={stat.decimals || 0} />
                     {stat.suffix && <span className="text-3xl text-yellow-400 ml-1">{stat.suffix}</span>}
                   </div>
                   <div className="text-sm text-purple-300 font-medium uppercase tracking-wider group-hover:text-purple-200 transition-colors">{stat.label}</div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -205,7 +243,7 @@ export default function Home() {
                     <service.icon className="w-7 h-7" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h3>
-                  <p className="text-gray-500 leading-relaxed text-sm line-clamp-2">{service.desc}</p>
+                  <p className="text-gray-500 leading-relaxed text-sm">{service.desc}</p>
                 </Link>
               </motion.div>
             ))}
@@ -493,22 +531,34 @@ export default function Home() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-white border-t border-white/10 pt-12 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-1">200+</div>
+          <motion.div 
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: {
+                opacity: 1,
+                transition: { staggerChildren: 0.2 }
+              }
+            }}
+            className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-white border-t border-white/10 pt-12 max-w-3xl mx-auto"
+          >
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="text-center">
+              <div className="text-3xl font-bold mb-1"><CountUp to={200} />+</div>
               <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Projects</div>
-            </div>
-            <div className="w-px h-10 bg-white/20 hidden md:block"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-1 flex justify-center items-center gap-1">4.9 <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" /></div>
+            </motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="w-px h-10 bg-white/20 hidden md:block"></motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="text-center">
+              <div className="text-3xl font-bold mb-1 flex justify-center items-center gap-1"><CountUp to={4.9} decimals={1} /> <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" /></div>
               <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Rating</div>
-            </div>
-            <div className="w-px h-10 bg-white/20 hidden md:block"></div>
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-1">24/7</div>
+            </motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="w-px h-10 bg-white/20 hidden md:block"></motion.div>
+            <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="text-center">
+              <div className="text-3xl font-bold mb-1"><CountUp to={24} />/7</div>
               <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Support</div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
     </>
