@@ -47,11 +47,14 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 z-50">
-          <Logo className="w-12 h-12" />
-          <div className="flex flex-col">
-            <span className={`text-2xl font-bold tracking-tight leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-gray-900 md:text-white'}`}>
+        <Link to="/" className="flex items-center gap-3.5 z-50">
+          <Logo className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0" />
+          <div className="flex flex-col justify-center gap-1">
+            <span className={`text-xl md:text-2xl font-bold tracking-tight leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
               Digitalonix
+            </span>
+            <span className={`text-[11px] md:text-[13px] font-medium tracking-wide leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-600' : 'text-white/90'}`}>
+              Your Path to Digital Dominance
             </span>
           </div>
         </Link>

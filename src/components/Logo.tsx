@@ -4,31 +4,30 @@ export default function Logo({ className = "w-10 h-10" }: { className?: string }
       <defs>
         <mask id="crescent-mask">
           <rect x="0" y="0" width="500" height="500" fill="white" />
-          <circle cx="300" cy="95" r="22" fill="black" />
+          <circle cx="330" cy="95" r="32" fill="black" />
         </mask>
       </defs>
       
       {/* Background */}
       <circle cx="250" cy="250" r="250" fill="#7a0bc0" />
       
-      {/* Bowl Outer */}
-      <circle cx="210" cy="250" r="120" fill="white" />
+      {/* The 'd' shape */}
+      <g fill="white">
+        {/* Stem */}
+        <rect x="300" y="130" width="60" height="140" />
+        {/* Outer Bowl */}
+        <circle cx="250" cy="270" r="110" />
+      </g>
       
-      {/* Top Right Cutout to separate bowl from stem */}
-      <rect x="210" y="100" width="70" height="150" fill="#7a0bc0" />
-      
-      {/* Bowl Inner */}
-      <circle cx="210" cy="250" r="60" fill="#7a0bc0" />
-      
-      {/* Stem */}
-      <rect x="270" y="130" width="60" height="240" fill="white" />
+      {/* Inner Bowl Cutout (purple) */}
+      <circle cx="250" cy="270" r="50" fill="#7a0bc0" />
       
       {/* Crescent Dot */}
-      <circle cx="300" cy="75" r="28" fill="white" mask="url(#crescent-mask)" />
+      <circle cx="330" cy="72" r="32" fill="white" mask="url(#crescent-mask)" />
       
-      {/* Glossy Highlights */}
-      <circle cx="165" cy="225" r="6" fill="white" />
-      <path d="M 175 205 A 45 45 0 0 1 210 195" stroke="white" strokeWidth="6" strokeLinecap="round" fill="none" />
+      {/* Glossy Highlights (Purple cutouts on the white bowl) */}
+      <path d="M 210 201 A 80 80 0 0 0 181 230" stroke="#7a0bc0" strokeWidth="10" strokeLinecap="round" fill="none" />
+      <circle cx="173" cy="249" r="6" fill="#7a0bc0" />
     </svg>
   );
 }

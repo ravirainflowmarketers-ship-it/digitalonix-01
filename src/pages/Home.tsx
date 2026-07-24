@@ -25,7 +25,7 @@ import {
   Globe, Edit3, LayoutTemplate, Shield, Plus, Minus,
   HeartPulse, Home as HomeIcon, GraduationCap, ShoppingBag, Landmark, 
   Utensils, Plane, Cpu, Factory, Scale, Dumbbell, Sparkles,
-  Zap, BarChart, Lock, Lightbulb, Users, Clock, Bot, Target, MapPin, Megaphone, PenTool, Video
+  Zap, BarChart, Lock, Lightbulb, Users, Clock, BrainCircuit, Target, MapPin, Megaphone, PenTool, Video
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SEO from '@/components/SEO';
@@ -33,7 +33,7 @@ import whyChooseUsImg from '@/assets/images/digitalonix_why_choose_us_1784320442
 
 const services = [
   { icon: TrendingUp, title: 'Digital Marketing', desc: 'Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.', color: 'bg-red-100 text-red-600', group: 'group-hover:bg-red-600 group-hover:text-white', path: '/digital-marketing-company-in-bhopal' },
-  { icon: Bot, title: 'AI Automations', desc: 'Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.', color: 'bg-indigo-100 text-indigo-600', group: 'group-hover:bg-indigo-600 group-hover:text-white', path: '#' },
+  { icon: BrainCircuit, title: 'AI Automations', desc: 'Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.', color: 'bg-indigo-100 text-indigo-600', group: 'group-hover:bg-indigo-600 group-hover:text-white', path: '#' },
   { icon: Target, title: 'Paid Ads', desc: 'High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales.', color: 'bg-yellow-100 text-yellow-600', group: 'group-hover:bg-yellow-600 group-hover:text-white', path: '/google-ads-agency-in-bhopal' },
   { icon: Share2, title: 'Social Media Marketing', desc: 'Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities.', color: 'bg-pink-100 text-pink-600', group: 'group-hover:bg-pink-600 group-hover:text-white', path: '/social-media-marketing-company-in-bhopal' },
   { icon: MapPin, title: 'Google My Business Optimization', desc: 'Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads.', color: 'bg-emerald-100 text-emerald-600', group: 'group-hover:bg-emerald-600 group-hover:text-white', path: '#' },
@@ -196,10 +196,10 @@ export default function Home() {
               className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto border-t border-white/10 pt-12"
             >
               {[
-                { label: 'Projects Delivered', value: 200, suffix: '+' },
-                { label: 'Happy Clients', value: 150, suffix: '+' },
-                { label: 'Google Rating', value: 4.9, suffix: '★', decimals: 1 },
-                { label: 'Support Available', value: 24, suffix: '/7' }
+                { label: 'Projects Delivered', value: 200, suffix: '+', suffixColor: 'text-yellow-400' },
+                { label: 'Happy Clients', value: 150, suffix: '+', suffixColor: 'text-yellow-400' },
+                { label: 'Google Rating', value: 4.9, suffix: '★', decimals: 1, suffixColor: 'text-yellow-400' },
+                { label: 'Support Available', value: 24, suffix: '/7', suffixColor: 'text-white' }
               ].map((stat, i) => (
                 <motion.div 
                   key={i} 
@@ -211,7 +211,7 @@ export default function Home() {
                 >
                   <div className="text-4xl md:text-5xl font-bold text-white mb-2 flex items-center justify-center">
                     <CountUp to={stat.value} decimals={stat.decimals || 0} />
-                    {stat.suffix && <span className="text-3xl text-yellow-400 ml-1">{stat.suffix}</span>}
+                    {stat.suffix && <span className={`text-3xl ${stat.suffixColor} ml-1`}>{stat.suffix}</span>}
                   </div>
                   <div className="text-sm text-purple-300 font-medium uppercase tracking-wider group-hover:text-purple-200 transition-colors">{stat.label}</div>
                 </motion.div>
