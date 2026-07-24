@@ -260,7 +260,7 @@ export default function Home() {
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" alt="Digitalonix Team" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent"></div>
                 <div className="absolute bottom-8 left-8 text-white">
-                  <div className="text-5xl font-bold mb-2">5+</div>
+                  <div className="text-5xl font-bold mb-2">3+</div>
                   <div className="text-lg font-medium">Years of Excellence</div>
                 </div>
               </div>
@@ -274,9 +274,9 @@ export default function Home() {
               
               <div className="grid sm:grid-cols-2 gap-4 mb-10">
                 {[
-                  '5+ Years of Digital Excellence',
+                  '3+ Years of Digital Excellence',
                   '200+ Successful Projects Delivered',
-                  'Expert Team of 25+ Professionals',
+                  'Expert Team of 10+ Professionals',
                   'ISO-Certified Quality Processes',
                   '95% Client Satisfaction Guarantee',
                   '24/7 Dedicated Support'
