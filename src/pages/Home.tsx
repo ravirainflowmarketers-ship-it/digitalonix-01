@@ -123,7 +123,7 @@ export default function Home() {
       />
 
       {/* 1) HERO SECTION */}
-      <section className="pt-32 pb-20 md:pt-48 md:pb-24 relative overflow-hidden bg-gray-900">
+      <section className="pt-24 pb-20 md:pt-36 md:pb-24 relative overflow-hidden bg-gray-900">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-purple-950 to-indigo-950 opacity-100"></div>
           {/* Subtle floating particles background */}
@@ -147,12 +147,6 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            {/* Top badge */}
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8 text-white text-sm font-medium shadow-xl">
-              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-              4.9 Rated Digital Agency • 33+ Reviews
-            </div>
-
             {/* Main Heading */}
             <h1 className="text-4xl md:text-6xl lg:text-[5.5rem] font-bold text-white mb-8 tracking-tight leading-[1.1]">
               We Build <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-400 drop-shadow-sm">Digital Empires</span><br className="hidden md:block" /> That Drive Real Growth
@@ -160,15 +154,15 @@ export default function Home() {
 
             {/* Subtext */}
             <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-              Digitalonix is Bhopal's most trusted digital agency. From stunning websites to powerful SEO and marketing campaigns—we transform your vision into measurable business success.
+              Digitalonix is one of Bhopal's most trusted Digital Marketing Agencies. From stunning websites to powerful SEO and marketing campaigns—we transform your vision into real, measurable business success.
             </p>
 
             {/* Service tags */}
             <div className="flex flex-wrap justify-center gap-3 mb-12 text-sm text-gray-200">
-              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Web Development</span>
-              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> SEO & Digital Marketing</span>
+              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Digital Marketing & SMM</span>
+              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Web Development & SEO</span>
               <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Branding & Design</span>
-              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Mobile Apps</span>
+              <span className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"><CheckCircle className="w-4 h-4 text-purple-400"/> Content Creation & Paid Ads</span>
             </div>
 
             {/* Buttons */}
