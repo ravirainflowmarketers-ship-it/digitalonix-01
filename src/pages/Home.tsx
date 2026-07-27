@@ -317,7 +317,7 @@ export default function Home() {
                transition={{ duration: 0.7 }}
             >
               <div className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm relative">
-                <img src={"/images/digitalonix_why_choose_us_1784320442503.jpg"} alt="Why Leading Brands Choose Digitalonix" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
+                <img src={"/images/digitalonix_why_choose_us_1784320442503.webp"} alt="Why Leading Brands Choose Digitalonix" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
               </div>
             </motion.div>
 
