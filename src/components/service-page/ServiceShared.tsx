@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Building, Briefcase, GraduationCap, HeartPulse, HardHat, Landmark, Building2, Utensils, Zap, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Building, Briefcase, GraduationCap, HeartPulse, HardHat, Landmark, Building2, Utensils, Zap, Send, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';

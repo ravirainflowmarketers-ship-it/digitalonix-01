@@ -1,4 +1,4 @@
-import novaBankLogo from '@/assets/images/nova_bank_logo_1784320100248.jpg';
+
 
 export const portfolioCategories = [
   { id: 'all', name: 'All Projects' },
@@ -95,9 +95,9 @@ export const portfolioProjects = [
     shortDescription: 'A modern, trustworthy visual identity for a digital-first bank.',
     industry: 'Finance',
     completionYear: '2024',
-    thumbnail: novaBankLogo,
+    thumbnail: "/images/nova_bank_logo_1784320100248.jpg",
     tags: ['Illustrator', 'Figma', 'Brand Strategy'],
-    featuredImage: novaBankLogo,
+    featuredImage: "/images/nova_bank_logo_1784320100248.jpg",
     clientObjective: 'Nova Bank needed a fresh logo and brand identity that communicated trust, innovation, and digital accessibility.',
     businessChallenge: 'Their old logo felt outdated and did not appeal to the millennial and Gen Z demographics.',
     strategy: 'We crafted a minimalist, bold logo and a cohesive visual system using deep blues and vibrant accents to convey stability and modernity.',

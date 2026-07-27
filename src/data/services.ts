@@ -1,27 +1,3 @@
-import digital_marketing_hero from '@/assets/images/digital_marketing_hero_1784322879394.jpg';
-import seo_hero from '@/assets/images/seo_hero_1784322891309.jpg';
-import social_media_hero from '@/assets/images/social_media_hero_1784322903154.jpg';
-import website_design_hero from '@/assets/images/website_design_hero_1784322913631.jpg';
-import graphic_design_hero from '@/assets/images/graphic_design_hero_1784322924334.jpg';
-import google_ads_hero from '@/assets/images/google_ads_hero_1784322935867.jpg';
-import mobile_app_hero from '@/assets/images/mobile_app_hero_1784322945813.jpg';
-import software_dev_hero from '@/assets/images/software_dev_hero_1784322956930.jpg';
-import branding_hero from '@/assets/images/branding_hero_1784322971222.jpg';
-import ecommerce_hero from '@/assets/images/ecommerce_hero_1784322982398.jpg';
-
-const imageMap: Record<string, string> = {
-  'digital_marketing_hero_1784322879394.jpg': digital_marketing_hero,
-  'seo_hero_1784322891309.jpg': seo_hero,
-  'social_media_hero_1784322903154.jpg': social_media_hero,
-  'website_design_hero_1784322913631.jpg': website_design_hero,
-  'graphic_design_hero_1784322924334.jpg': graphic_design_hero,
-  'google_ads_hero_1784322935867.jpg': google_ads_hero,
-  'mobile_app_hero_1784322945813.jpg': mobile_app_hero,
-  'software_dev_hero_1784322956930.jpg': software_dev_hero,
-  'branding_hero_1784322971222.jpg': branding_hero,
-  'ecommerce_hero_1784322982398.jpg': ecommerce_hero,
-};
-
 export interface ServiceData {
   id: string;
   title: string;
@@ -51,36 +27,113 @@ const rawServices = [
     "description": "Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.",
     "h1": "Premium Digital Marketing Services",
     "subtitle": "Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/digital_marketing_hero_1784322879394.jpg",
     "overview": "Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -89,15 +142,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -106,36 +199,113 @@ const rawServices = [
     "description": "Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.",
     "h1": "Premium AI Automations Services",
     "subtitle": "Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/software_dev_hero_1784322956930.jpg",
     "overview": "Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -144,15 +314,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -161,36 +371,113 @@ const rawServices = [
     "description": "High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales.",
     "h1": "Premium Paid Ads Services",
     "subtitle": "High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/google_ads_hero_1784322935867.jpg",
     "overview": "High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -199,15 +486,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -216,36 +543,113 @@ const rawServices = [
     "description": "Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities.",
     "h1": "Premium Social Media Marketing Services",
     "subtitle": "Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/social_media_hero_1784322903154.jpg",
     "overview": "Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -254,15 +658,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -271,36 +715,113 @@ const rawServices = [
     "description": "Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads.",
     "h1": "Premium Google My Business Optimization Services",
     "subtitle": "Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/google_my_business.webp",
     "overview": "Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -309,15 +830,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -326,36 +887,113 @@ const rawServices = [
     "description": "Data-driven SEO strategies to improve rankings, increase organic traffic, and boost long-term online visibility.",
     "h1": "Premium SEO Services",
     "subtitle": "Data-driven SEO strategies to improve rankings, increase organic traffic, and boost long-term online visibility.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/seo_hero_1784322891309.jpg",
     "overview": "Data-driven SEO strategies to improve rankings, increase organic traffic, and boost long-term online visibility. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -364,15 +1002,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -381,36 +1059,113 @@ const rawServices = [
     "description": "Conversion-focused, modern, and responsive websites designed to elevate your brand and turn visitors into customers.",
     "h1": "Premium Website Design Services",
     "subtitle": "Conversion-focused, modern, and responsive websites designed to elevate your brand and turn visitors into customers.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/website_design_hero_1784322913631.jpg",
     "overview": "Conversion-focused, modern, and responsive websites designed to elevate your brand and turn visitors into customers. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -419,15 +1174,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -436,36 +1231,113 @@ const rawServices = [
     "description": "Strategic media placements and brand positioning to build credibility, authority, and public trust.",
     "h1": "Premium PR Management Services",
     "subtitle": "Strategic media placements and brand positioning to build credibility, authority, and public trust.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/pr_management.webp",
     "overview": "Strategic media placements and brand positioning to build credibility, authority, and public trust. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -474,15 +1346,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -491,36 +1403,113 @@ const rawServices = [
     "description": "High-quality, engaging content tailored for websites, ads, and social media to strengthen brand messaging and audience connection.",
     "h1": "Premium Content Creation Services",
     "subtitle": "High-quality, engaging content tailored for websites, ads, and social media to strengthen brand messaging and audience connection.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/content_creation.webp",
     "overview": "High-quality, engaging content tailored for websites, ads, and social media to strengthen brand messaging and audience connection. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -529,15 +1518,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -546,36 +1575,113 @@ const rawServices = [
     "description": "Professional video editing that enhances storytelling, boosts engagement, and increases social media performance.",
     "h1": "Premium Video Editing Services",
     "subtitle": "Professional video editing that enhances storytelling, boosts engagement, and increases social media performance.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/video_editing.webp",
     "overview": "Professional video editing that enhances storytelling, boosts engagement, and increases social media performance. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -584,15 +1690,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -601,36 +1747,113 @@ const rawServices = [
     "description": "Creative and impactful visuals including branding, social media creatives, ads, and marketing materials.",
     "h1": "Premium Graphic Designing Services",
     "subtitle": "Creative and impactful visuals including branding, social media creatives, ads, and marketing materials.",
-    "heroImage": "digital_marketing_hero_1784322879394.jpg",
+    "heroImage": "/images/graphic_design_hero_1784322924334.jpg",
     "overview": "Creative and impactful visuals including branding, social media creatives, ads, and marketing materials. Our approach focuses on delivering measurable ROI through data-driven execution and continuous optimization.",
     "whoNeedsIt": "Brands and businesses looking to scale their operations, enhance their online presence, and drive meaningful conversions.",
     "impact": "Drive immediate results while building long-term brand equity and sustainable growth engines.",
     "whyChooseUs": [
-      { "icon": "Target", "title": "Result Oriented", "desc": "We focus purely on metrics that matter to your bottom line." },
-      { "icon": "Zap", "title": "Fast Execution", "desc": "Rapid deployment and continuous iteration." },
-      { "icon": "Users", "title": "Expert Team", "desc": "Seasoned professionals handling your campaigns." },
-      { "icon": "BarChart", "title": "Data Driven", "desc": "Every decision backed by solid analytics." }
+      {
+        "icon": "Target",
+        "title": "Result Oriented",
+        "desc": "We focus purely on metrics that matter to your bottom line."
+      },
+      {
+        "icon": "Zap",
+        "title": "Fast Execution",
+        "desc": "Rapid deployment and continuous iteration."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "desc": "Seasoned professionals handling your campaigns."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Data Driven",
+        "desc": "Every decision backed by solid analytics."
+      }
     ],
     "problems": [
-      { "icon": "EyeOff", "problem": "Low Visibility", "solution": "Strategic positioning", "benefit": "Stand out in your market" },
-      { "icon": "TrendingDown", "problem": "Poor Conversion", "solution": "Optimization frameworks", "benefit": "Higher ROI on spend" },
-      { "icon": "Clock", "problem": "Slow Growth", "solution": "Scalable systems", "benefit": "Accelerated trajectory" },
-      { "icon": "DollarSign", "problem": "Wasted Budget", "solution": "Targeted allocation", "benefit": "Maximum efficiency" }
+      {
+        "icon": "EyeOff",
+        "problem": "Low Visibility",
+        "solution": "Strategic positioning",
+        "benefit": "Stand out in your market"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Poor Conversion",
+        "solution": "Optimization frameworks",
+        "benefit": "Higher ROI on spend"
+      },
+      {
+        "icon": "Clock",
+        "problem": "Slow Growth",
+        "solution": "Scalable systems",
+        "benefit": "Accelerated trajectory"
+      },
+      {
+        "icon": "DollarSign",
+        "problem": "Wasted Budget",
+        "solution": "Targeted allocation",
+        "benefit": "Maximum efficiency"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Discovery", "desc": "Deep dive into your goals and current positioning." },
-      { "step": "02", "title": "Strategy", "desc": "Developing a custom roadmap for success." },
-      { "step": "03", "title": "Execution", "desc": "Implementing the strategy with precision." },
-      { "step": "04", "title": "Optimization", "desc": "Continuous testing and refinement." },
-      { "step": "05", "title": "Scaling", "desc": "Amplifying what works to maximize returns." }
+      {
+        "step": "01",
+        "title": "Discovery",
+        "desc": "Deep dive into your goals and current positioning."
+      },
+      {
+        "step": "02",
+        "title": "Strategy",
+        "desc": "Developing a custom roadmap for success."
+      },
+      {
+        "step": "03",
+        "title": "Execution",
+        "desc": "Implementing the strategy with precision."
+      },
+      {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous testing and refinement."
+      },
+      {
+        "step": "05",
+        "title": "Scaling",
+        "desc": "Amplifying what works to maximize returns."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "CheckCircle", "title": "Strategy Setup", "desc": "Complete foundational setup." },
-      { "icon": "Activity", "title": "Active Management", "desc": "Daily monitoring and optimization." },
-      { "icon": "BarChart", "title": "Performance Reporting", "desc": "Detailed transparent analytics." },
-      { "icon": "Headphones", "title": "Dedicated Support", "desc": "Direct access to your team." }
+      {
+        "icon": "CheckCircle",
+        "title": "Strategy Setup",
+        "desc": "Complete foundational setup."
+      },
+      {
+        "icon": "Activity",
+        "title": "Active Management",
+        "desc": "Daily monitoring and optimization."
+      },
+      {
+        "icon": "BarChart",
+        "title": "Performance Reporting",
+        "desc": "Detailed transparent analytics."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support",
+        "desc": "Direct access to your team."
+      }
     ],
-    "techStack": ["Analytics", "Performance Tracking", "Optimization Tools", "Reporting Dashboards"],
+    "techStack": [
+      "Analytics",
+      "Performance Tracking",
+      "Optimization Tools",
+      "Reporting Dashboards"
+    ],
     "caseStudy": {
       "challenge": "Client needed to aggressively scale their presence in a saturated market.",
       "strategy": "Deployed a high-impact, multi-channel approach focused on quick wins and sustainable growth.",
@@ -639,15 +1862,55 @@ const rawServices = [
       "metrics": "250% increase in overall performance metrics within 3 months."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Core Services", "Basic Reporting", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["Advanced Services", "Custom Dashboards", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full Suite", "Dedicated Team", "Strategic Consulting"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Core Services",
+          "Basic Reporting",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Advanced Services",
+          "Custom Dashboards",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full Suite",
+          "Dedicated Team",
+          "Strategic Consulting"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "How quickly can we see results?", "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months." },
-      { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
-      { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
-      { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+      {
+        "q": "How quickly can we see results?",
+        "a": "Initial results can often be seen within the first 30 days, with compounding growth over 3-6 months."
+      },
+      {
+        "q": "Do you provide regular reporting?",
+        "a": "Yes, we provide completely transparent, regular reporting on all key metrics."
+      },
+      {
+        "q": "Is there a long-term contract?",
+        "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results."
+      },
+      {
+        "q": "How do we get started?",
+        "a": "Book a consultation call with our team to discuss your specific needs and goals."
+      }
     ]
   },
   {
@@ -656,40 +1919,126 @@ const rawServices = [
     "description": "Premium AI Automation Services in Bhopal. We specialize in Business Process Automation, AI Chatbot Automation, and Workflow Automation Solutions.",
     "h1": "Premium AI Automation Services in Bhopal",
     "subtitle": "Transform your business operations with intelligent AI chatbots, CRM automation, and custom workflow solutions designed for modern growth.",
-    "heroImage": "software_dev_hero_1784322956930.jpg",
+    "heroImage": "/images/software_dev_hero_1784322956930.jpg",
     "primaryCta": "Start Your AI Automation Project",
     "secondaryCta": "Get Free Consultation",
     "overview": "What is AI Automation? AI Automation combines artificial intelligence with system processes to handle repetitive tasks, enhance customer support, and streamline workflows. For businesses in Bhopal, implementing AI tools, chatbots, CRM automation, and intelligent workflows means operating smarter, faster, and more efficiently without expanding overhead.",
     "whoNeedsIt": "Businesses in Bhopal seeking to scale operations, improve customer experiences, and reduce manual workload through AI and automation.",
     "impact": "Save time, lower operational costs, and boost productivity while delivering a flawless, 24/7 experience to your customers.",
     "whyChooseUs": [
-      { "icon": "MapPin", "title": "Local Expertise in Bhopal", "desc": "We understand the local market and tailor AI solutions that work for businesses here." },
-      { "icon": "Cpu", "title": "Custom AI Solutions", "desc": "We build tailored AI and automation tools designed specifically for your unique workflows." },
-      { "icon": "DollarSign", "title": "Affordable Pricing", "desc": "Enterprise-grade, ROI-focused automation solutions that are accessible for all sizes." },
-      { "icon": "Headphones", "title": "Dedicated Support Team", "desc": "Ongoing maintenance and optimization to ensure your systems run flawlessly." }
+      {
+        "icon": "MapPin",
+        "title": "Local Expertise in Bhopal",
+        "desc": "We understand the local market and tailor AI solutions that work for businesses here."
+      },
+      {
+        "icon": "Cpu",
+        "title": "Custom AI Solutions",
+        "desc": "We build tailored AI and automation tools designed specifically for your unique workflows."
+      },
+      {
+        "icon": "DollarSign",
+        "title": "Affordable Pricing",
+        "desc": "Enterprise-grade, ROI-focused automation solutions that are accessible for all sizes."
+      },
+      {
+        "icon": "Headphones",
+        "title": "Dedicated Support Team",
+        "desc": "Ongoing maintenance and optimization to ensure your systems run flawlessly."
+      }
     ],
     "problems": [
-      { "icon": "Clock", "problem": "Wasted Time", "solution": "Workflow Automation", "benefit": "Save Time & Operational Costs" },
-      { "icon": "TrendingDown", "problem": "Manual Errors", "solution": "AI Integration", "benefit": "Reduce Manual Errors" },
-      { "icon": "Users", "problem": "Poor Support", "solution": "AI Chatbots", "benefit": "Improve Customer Experience & 24/7 Support" },
-      { "icon": "BarChart", "problem": "Stagnant Growth", "solution": "CRM Automation", "benefit": "Increase Productivity & Sales" }
+      {
+        "icon": "Clock",
+        "problem": "Wasted Time",
+        "solution": "Workflow Automation",
+        "benefit": "Save Time & Operational Costs"
+      },
+      {
+        "icon": "TrendingDown",
+        "problem": "Manual Errors",
+        "solution": "AI Integration",
+        "benefit": "Reduce Manual Errors"
+      },
+      {
+        "icon": "Users",
+        "problem": "Poor Support",
+        "solution": "AI Chatbots",
+        "benefit": "Improve Customer Experience & 24/7 Support"
+      },
+      {
+        "icon": "BarChart",
+        "problem": "Stagnant Growth",
+        "solution": "CRM Automation",
+        "benefit": "Increase Productivity & Sales"
+      }
     ],
     "process": [
-      { "step": "01", "title": "Requirement Analysis", "desc": "We analyze your current operations and identify key areas for automation." },
-      { "step": "02", "title": "Automation Strategy", "desc": "Developing a tailored blueprint for seamless AI integration." },
-      { "step": "03", "title": "AI Tool Integration", "desc": "Connecting chatbots, CRMs, and custom AI solutions into your workflow." },
-      { "step": "04", "title": "Testing & Optimization", "desc": "Rigorous testing to ensure flawless performance and efficiency." },
-      { "step": "05", "title": "Ongoing Support", "desc": "Continuous monitoring and updates to keep your systems running smoothly." }
+      {
+        "step": "01",
+        "title": "Requirement Analysis",
+        "desc": "We analyze your current operations and identify key areas for automation."
+      },
+      {
+        "step": "02",
+        "title": "Automation Strategy",
+        "desc": "Developing a tailored blueprint for seamless AI integration."
+      },
+      {
+        "step": "03",
+        "title": "AI Tool Integration",
+        "desc": "Connecting chatbots, CRMs, and custom AI solutions into your workflow."
+      },
+      {
+        "step": "04",
+        "title": "Testing & Optimization",
+        "desc": "Rigorous testing to ensure flawless performance and efficiency."
+      },
+      {
+        "step": "05",
+        "title": "Ongoing Support",
+        "desc": "Continuous monitoring and updates to keep your systems running smoothly."
+      }
     ],
     "servicesIncluded": [
-      { "icon": "MessageSquare", "title": "AI Chatbot Development", "desc": "Intelligent conversational agents for 24/7 customer support." },
-      { "icon": "Database", "title": "CRM & Sales Automation", "desc": "Streamline your pipeline and automate follow-ups." },
-      { "icon": "Mail", "title": "WhatsApp & Email Automation", "desc": "Targeted, automated messaging to nurture leads effectively." },
-      { "icon": "GitMerge", "title": "Workflow Automation", "desc": "Connect apps and automate repetitive administrative tasks." },
-      { "icon": "Target", "title": "Lead Generation Automation", "desc": "AI-driven systems to capture and qualify prospects." },
-      { "icon": "Headphones", "title": "AI Customer Support Systems", "desc": "Resolve queries instantly and intelligently using advanced AI." }
+      {
+        "icon": "MessageSquare",
+        "title": "AI Chatbot Development",
+        "desc": "Intelligent conversational agents for 24/7 customer support."
+      },
+      {
+        "icon": "Database",
+        "title": "CRM & Sales Automation",
+        "desc": "Streamline your pipeline and automate follow-ups."
+      },
+      {
+        "icon": "Mail",
+        "title": "WhatsApp & Email Automation",
+        "desc": "Targeted, automated messaging to nurture leads effectively."
+      },
+      {
+        "icon": "GitMerge",
+        "title": "Workflow Automation",
+        "desc": "Connect apps and automate repetitive administrative tasks."
+      },
+      {
+        "icon": "Target",
+        "title": "Lead Generation Automation",
+        "desc": "AI-driven systems to capture and qualify prospects."
+      },
+      {
+        "icon": "Headphones",
+        "title": "AI Customer Support Systems",
+        "desc": "Resolve queries instantly and intelligently using advanced AI."
+      }
     ],
-    "techStack": ["OpenAI / GPT-4", "Make / Zapier", "ManyChat", "HubSpot CRM", "Python AI Scripts"],
+    "techStack": [
+      "OpenAI / GPT-4",
+      "Make / Zapier",
+      "ManyChat",
+      "HubSpot CRM",
+      "Python AI Scripts"
+    ],
     "caseStudy": {
       "challenge": "Client was overwhelmed by repetitive administrative tasks and delayed customer responses.",
       "strategy": "Implemented a custom AI chatbot and integrated CRM workflow automation.",
@@ -698,19 +2047,65 @@ const rawServices = [
       "metrics": "85% reduction in manual data entry and a 3x increase in lead qualification speed."
     },
     "pricing": [
-      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Basic Chatbot Setup", "Simple Workflows", "Email Support"] },
-      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["CRM Automation", "WhatsApp Integration", "Priority Support"], "popular": true },
-      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full AI Suite", "Custom AI Models", "Dedicated Manager"] }
+      {
+        "name": "Starter",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Basic Chatbot Setup",
+          "Simple Workflows",
+          "Email Support"
+        ]
+      },
+      {
+        "name": "Growth",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "CRM Automation",
+          "WhatsApp Integration",
+          "Priority Support"
+        ],
+        "popular": true
+      },
+      {
+        "name": "Enterprise",
+        "price": "Custom",
+        "period": "/mo",
+        "features": [
+          "Full AI Suite",
+          "Custom AI Models",
+          "Dedicated Manager"
+        ]
+      }
     ],
     "faqs": [
-      { "q": "What is AI Automation?", "a": "AI Automation involves using artificial intelligence and software tools to perform repetitive tasks, streamline operations, and enhance customer interactions without human intervention." },
-      { "q": "How can my business in Bhopal benefit from AI Automation?", "a": "By automating routine tasks like lead generation, customer support, and data entry, you can save significant time, reduce operational costs, and focus on growing your business." },
-      { "q": "Do you build custom AI Chatbots?", "a": "Yes, we develop intelligent AI Chatbots tailored for websites, WhatsApp, and social media platforms to handle customer inquiries 24/7." },
-      { "q": "What tools do you use for workflow automation?", "a": "We leverage industry-leading platforms like Zapier, Make, and custom API integrations to connect your software stack and automate data flows seamlessly." },
-      { "q": "Is AI Automation expensive for small businesses?", "a": "Not at all. We offer affordable, customized pricing plans that ensure a high return on investment by saving you time and labor costs." },
-      { "q": "Will AI replace my team?", "a": "AI is designed to empower your team, not replace them. It handles mundane, repetitive tasks so your employees can focus on high-value, strategic work." }
+      {
+        "q": "What is AI Automation?",
+        "a": "AI Automation involves using artificial intelligence and software tools to perform repetitive tasks, streamline operations, and enhance customer interactions without human intervention."
+      },
+      {
+        "q": "How can my business in Bhopal benefit from AI Automation?",
+        "a": "By automating routine tasks like lead generation, customer support, and data entry, you can save significant time, reduce operational costs, and focus on growing your business."
+      },
+      {
+        "q": "Do you build custom AI Chatbots?",
+        "a": "Yes, we develop intelligent AI Chatbots tailored for websites, WhatsApp, and social media platforms to handle customer inquiries 24/7."
+      },
+      {
+        "q": "What tools do you use for workflow automation?",
+        "a": "We leverage industry-leading platforms like Zapier, Make, and custom API integrations to connect your software stack and automate data flows seamlessly."
+      },
+      {
+        "q": "Is AI Automation expensive for small businesses?",
+        "a": "Not at all. We offer affordable, customized pricing plans that ensure a high return on investment by saving you time and labor costs."
+      },
+      {
+        "q": "Will AI replace my team?",
+        "a": "AI is designed to empower your team, not replace them. It handles mundane, repetitive tasks so your employees can focus on high-value, strategic work."
+      }
     ]
-  },
+  }
 ];
 
 export const servicesData = rawServices.reduce((acc, service) => {

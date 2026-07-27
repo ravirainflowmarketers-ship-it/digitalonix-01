@@ -29,7 +29,7 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SEO from '@/components/SEO';
-import whyChooseUsImg from '@/assets/images/digitalonix_why_choose_us_1784320442503.jpg';
+
 
 const services = [
   { icon: TrendingUp, title: 'Digital Marketing', desc: 'Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.', color: 'bg-red-100 text-red-600', group: 'group-hover:bg-red-600 group-hover:text-white', path: '/digital-marketing-company-in-bhopal' },
@@ -317,7 +317,7 @@ export default function Home() {
                transition={{ duration: 0.7 }}
             >
               <div className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm relative">
-                <img src={whyChooseUsImg} alt="Why Leading Brands Choose Digitalonix" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
+                <img src={"/images/digitalonix_why_choose_us_1784320442503.jpg"} alt="Why Leading Brands Choose Digitalonix" className="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
               </div>
             </motion.div>
 
