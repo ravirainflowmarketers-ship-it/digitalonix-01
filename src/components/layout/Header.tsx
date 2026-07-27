@@ -7,7 +7,7 @@ import Logo from '@/components/Logo';
 
 const services = [
   { name: 'Digital Marketing', path: '/digital-marketing-company-in-bhopal' },
-  { name: 'AI Automations', path: '/ai-automations' },
+  { name: 'AI Automations', path: '/ai-automation-company-in-bhopal' },
   { name: 'Paid Ads', path: '/google-ads-agency-in-bhopal' },
   { name: 'Social Media Marketing', path: '/social-media-marketing-company-in-bhopal' },
   { name: 'Google My Business', path: '/google-my-business' },
@@ -48,7 +48,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3.5 z-50">
-          <Logo className="w-12 h-12 md:w-14 md:h-14 flex-shrink-0" />
+          <Logo className="h-10 w-auto md:h-12 md:w-auto flex-shrink-0" />
           <div className="flex flex-col justify-center gap-1">
             <span className={`text-xl md:text-2xl font-bold tracking-tight leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
               Digitalonix

@@ -40,6 +40,8 @@ export interface ServiceData {
   caseStudy: { challenge: string; strategy: string; implementation: string; results: string; metrics: string; };
   pricing: { name: string; price: string; period: string; features: string[]; popular?: boolean; }[];
   faqs: { q: string; a: string; }[];
+  primaryCta?: string;
+  secondaryCta?: string;
 }
 
 const rawServices = [
@@ -646,6 +648,67 @@ const rawServices = [
       { "q": "Do you provide regular reporting?", "a": "Yes, we provide completely transparent, regular reporting on all key metrics." },
       { "q": "Is there a long-term contract?", "a": "We offer flexible terms, though we recommend a minimum engagement period to see optimal results." },
       { "q": "How do we get started?", "a": "Book a consultation call with our team to discuss your specific needs and goals." }
+    ]
+  },
+  {
+    "id": "ai-automation-company-in-bhopal",
+    "title": "AI Automation Company in Bhopal | AI Services",
+    "description": "Premium AI Automation Services in Bhopal. We specialize in Business Process Automation, AI Chatbot Automation, and Workflow Automation Solutions.",
+    "h1": "Premium AI Automation Services in Bhopal",
+    "subtitle": "Transform your business operations with intelligent AI chatbots, CRM automation, and custom workflow solutions designed for modern growth.",
+    "heroImage": "software_dev_hero_1784322956930.jpg",
+    "primaryCta": "Start Your AI Automation Project",
+    "secondaryCta": "Get Free Consultation",
+    "overview": "What is AI Automation? AI Automation combines artificial intelligence with system processes to handle repetitive tasks, enhance customer support, and streamline workflows. For businesses in Bhopal, implementing AI tools, chatbots, CRM automation, and intelligent workflows means operating smarter, faster, and more efficiently without expanding overhead.",
+    "whoNeedsIt": "Businesses in Bhopal seeking to scale operations, improve customer experiences, and reduce manual workload through AI and automation.",
+    "impact": "Save time, lower operational costs, and boost productivity while delivering a flawless, 24/7 experience to your customers.",
+    "whyChooseUs": [
+      { "icon": "MapPin", "title": "Local Expertise in Bhopal", "desc": "We understand the local market and tailor AI solutions that work for businesses here." },
+      { "icon": "Cpu", "title": "Custom AI Solutions", "desc": "We build tailored AI and automation tools designed specifically for your unique workflows." },
+      { "icon": "DollarSign", "title": "Affordable Pricing", "desc": "Enterprise-grade, ROI-focused automation solutions that are accessible for all sizes." },
+      { "icon": "Headphones", "title": "Dedicated Support Team", "desc": "Ongoing maintenance and optimization to ensure your systems run flawlessly." }
+    ],
+    "problems": [
+      { "icon": "Clock", "problem": "Wasted Time", "solution": "Workflow Automation", "benefit": "Save Time & Operational Costs" },
+      { "icon": "TrendingDown", "problem": "Manual Errors", "solution": "AI Integration", "benefit": "Reduce Manual Errors" },
+      { "icon": "Users", "problem": "Poor Support", "solution": "AI Chatbots", "benefit": "Improve Customer Experience & 24/7 Support" },
+      { "icon": "BarChart", "problem": "Stagnant Growth", "solution": "CRM Automation", "benefit": "Increase Productivity & Sales" }
+    ],
+    "process": [
+      { "step": "01", "title": "Requirement Analysis", "desc": "We analyze your current operations and identify key areas for automation." },
+      { "step": "02", "title": "Automation Strategy", "desc": "Developing a tailored blueprint for seamless AI integration." },
+      { "step": "03", "title": "AI Tool Integration", "desc": "Connecting chatbots, CRMs, and custom AI solutions into your workflow." },
+      { "step": "04", "title": "Testing & Optimization", "desc": "Rigorous testing to ensure flawless performance and efficiency." },
+      { "step": "05", "title": "Ongoing Support", "desc": "Continuous monitoring and updates to keep your systems running smoothly." }
+    ],
+    "servicesIncluded": [
+      { "icon": "MessageSquare", "title": "AI Chatbot Development", "desc": "Intelligent conversational agents for 24/7 customer support." },
+      { "icon": "Database", "title": "CRM & Sales Automation", "desc": "Streamline your pipeline and automate follow-ups." },
+      { "icon": "Mail", "title": "WhatsApp & Email Automation", "desc": "Targeted, automated messaging to nurture leads effectively." },
+      { "icon": "GitMerge", "title": "Workflow Automation", "desc": "Connect apps and automate repetitive administrative tasks." },
+      { "icon": "Target", "title": "Lead Generation Automation", "desc": "AI-driven systems to capture and qualify prospects." },
+      { "icon": "Headphones", "title": "AI Customer Support Systems", "desc": "Resolve queries instantly and intelligently using advanced AI." }
+    ],
+    "techStack": ["OpenAI / GPT-4", "Make / Zapier", "ManyChat", "HubSpot CRM", "Python AI Scripts"],
+    "caseStudy": {
+      "challenge": "Client was overwhelmed by repetitive administrative tasks and delayed customer responses.",
+      "strategy": "Implemented a custom AI chatbot and integrated CRM workflow automation.",
+      "implementation": "Deployed AI chatbots across WhatsApp and website, alongside custom Zapier automations.",
+      "results": "Drastically reduced response times and saved over 40 hours of manual work weekly.",
+      "metrics": "85% reduction in manual data entry and a 3x increase in lead qualification speed."
+    },
+    "pricing": [
+      { "name": "Starter", "price": "Custom", "period": "/mo", "features": ["Basic Chatbot Setup", "Simple Workflows", "Email Support"] },
+      { "name": "Growth", "price": "Custom", "period": "/mo", "features": ["CRM Automation", "WhatsApp Integration", "Priority Support"], "popular": true },
+      { "name": "Enterprise", "price": "Custom", "period": "/mo", "features": ["Full AI Suite", "Custom AI Models", "Dedicated Manager"] }
+    ],
+    "faqs": [
+      { "q": "What is AI Automation?", "a": "AI Automation involves using artificial intelligence and software tools to perform repetitive tasks, streamline operations, and enhance customer interactions without human intervention." },
+      { "q": "How can my business in Bhopal benefit from AI Automation?", "a": "By automating routine tasks like lead generation, customer support, and data entry, you can save significant time, reduce operational costs, and focus on growing your business." },
+      { "q": "Do you build custom AI Chatbots?", "a": "Yes, we develop intelligent AI Chatbots tailored for websites, WhatsApp, and social media platforms to handle customer inquiries 24/7." },
+      { "q": "What tools do you use for workflow automation?", "a": "We leverage industry-leading platforms like Zapier, Make, and custom API integrations to connect your software stack and automate data flows seamlessly." },
+      { "q": "Is AI Automation expensive for small businesses?", "a": "Not at all. We offer affordable, customized pricing plans that ensure a high return on investment by saving you time and labor costs." },
+      { "q": "Will AI replace my team?", "a": "AI is designed to empower your team, not replace them. It handles mundane, repetitive tasks so your employees can focus on high-value, strategic work." }
     ]
   },
 ];

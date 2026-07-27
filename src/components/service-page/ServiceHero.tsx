@@ -33,12 +33,16 @@ export default function ServiceHero({ data }: { data: ServiceData }) {
             <div className="flex flex-wrap gap-4 mb-10">
               <Button size="lg" className="bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white border-0 shadow-lg shadow-purple-500/25 h-14 px-8" asChild>
                 <Link to="/contact">
-                  Start Your Project
+                  {data.primaryCta || "Start Your Project"}
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-gray-600 text-white hover:bg-white/5 h-14 px-8" asChild>
-                <a href="tel:+916268366806">Call +91 62683 66806</a>
+                {data.secondaryCta ? (
+                  <Link to="/contact">{data.secondaryCta}</Link>
+                ) : (
+                  <a href="tel:+916268366806">Call +91 62683 66806</a>
+                )}
               </Button>
             </div>
             

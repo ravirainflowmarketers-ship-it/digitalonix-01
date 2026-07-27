@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="flex items-center gap-2 mb-6">
-              <Logo className="w-12 h-12" />
+              <Logo className="h-12 w-auto flex-shrink-0" />
               <div className="flex flex-col">
                 <span className="text-2xl font-bold tracking-tight text-white leading-none">
                   Digitalonix
@@ -41,7 +41,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-4">
               <li><Link to="/digital-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Digital Marketing</Link></li>
-              <li><Link to="/ai-automations" className="hover:text-purple-400 transition-colors">AI Automations</Link></li>
+              <li><Link to="/ai-automation-company-in-bhopal" className="hover:text-purple-400 transition-colors">AI Automations</Link></li>
               <li><Link to="/google-ads-agency-in-bhopal" className="hover:text-purple-400 transition-colors">Paid Ads</Link></li>
               <li><Link to="/social-media-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Social Media Marketing</Link></li>
               <li><Link to="/google-my-business" className="hover:text-purple-400 transition-colors">Google My Business</Link></li>
