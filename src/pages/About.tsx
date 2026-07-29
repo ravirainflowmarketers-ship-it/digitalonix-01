@@ -125,7 +125,7 @@ export default function About() {
             <div className="lg:w-1/2 w-full">
               <div className="relative rounded-[2rem] overflow-hidden bg-gray-100 aspect-[4/5] border border-gray-100 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] group">
                  <img 
-                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200" 
                    alt="Digitalonix Team" 
                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                  />
@@ -314,7 +314,7 @@ export default function About() {
               </p>
               <div className="flex items-center gap-5">
                 <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-gray-200 overflow-hidden shrink-0 border-2 border-white shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80" alt="Founder" className="w-full h-full object-cover" />
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="Founder" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <div className="font-bold text-gray-900 text-xl">Leadership Team</div>

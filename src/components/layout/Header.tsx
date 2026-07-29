@@ -23,6 +23,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -48,7 +49,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3.5 z-50">
-          <Logo className="h-10 w-auto md:h-12 md:w-auto flex-shrink-0" />
+          <Logo className="flex-shrink-0" />
           <div className="flex flex-col justify-center gap-1">
             <span className={`text-xl md:text-2xl font-bold tracking-tight leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
               Digitalonix
@@ -134,12 +135,34 @@ export default function Header() {
                 <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
                 <Link to="/portfolio" onClick={() => setMobileMenuOpen(false)}>Portfolio</Link>
                 <div className="flex flex-col gap-4">
-                  <span className="text-gray-400 text-sm font-semibold uppercase tracking-wider">Services</span>
-                  {services.map((service) => (
-                    <Link key={service.path} to={service.path} onClick={() => setMobileMenuOpen(false)} className="pl-4 border-l-2 border-purple-100 text-gray-600 hover:text-purple-600 hover:border-purple-600 transition-colors">
-                      {service.name}
-                    </Link>
-                  ))}
+                  <button 
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                    className={`flex items-center justify-between w-full text-left transition-colors duration-200 ${mobileServicesOpen ? 'text-purple-600' : 'hover:text-purple-600'}`}
+                  >
+                    Services
+                    <motion.div
+                      animate={{ rotate: mobileServicesOpen ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <ChevronDown className="w-5 h-5 text-purple-500" />
+                    </motion.div>
+                  </button>
+                  <AnimatePresence>
+                    {mobileServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="flex flex-col gap-4 overflow-hidden"
+                      >
+                        {services.map((service) => (
+                          <Link key={service.path} to={service.path} onClick={() => setMobileMenuOpen(false)} className="pl-4 border-l-2 border-purple-100 text-gray-600 hover:text-purple-600 hover:border-purple-600 transition-colors">
+                            {service.name}
+                          </Link>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
                 <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
               </nav>

@@ -89,7 +89,7 @@ export default function ServiceHero({ data }: { data: ServiceData }) {
               <img 
                 src={data.heroImage} 
                 alt={data.h1}
-                className="w-full h-auto object-cover aspect-[4/3] transform transition-transform duration-700 hover:scale-105"
+                className="w-full h-full object-cover aspect-[4/3] transform transition-transform duration-700 hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent pointer-events-none"></div>

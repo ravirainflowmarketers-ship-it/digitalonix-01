@@ -9,5 +9,4 @@ function replaceImages(filePath, width, height) {
     fs.writeFileSync(filePath, content);
 }
 
-replaceImages('src/data/services.ts', 1200, 800);
 replaceImages('src/data/portfolio.ts', 800, 600);
