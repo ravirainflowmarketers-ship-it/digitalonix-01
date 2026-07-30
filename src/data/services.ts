@@ -1924,7 +1924,7 @@ const rawServices = [
     "secondaryCta": "Get Free Consultation",
     "overview": "What is AI Automation? AI Automation combines artificial intelligence with system processes to handle repetitive tasks, enhance customer support, and streamline workflows. For businesses in Bhopal, implementing AI tools, chatbots, CRM automation, and intelligent workflows means operating smarter, faster, and more efficiently without expanding overhead.",
     "whoNeedsIt": "Businesses in Bhopal seeking to scale operations, improve customer experiences, and reduce manual workload through AI and automation.",
-    "impact": "Save time, lower operational costs, and boost productivity while delivering a flawless, 24/7 experience to your customers.",
+    "impact": "Save time, lower operational costs, and boost productivity while delivering a flawless, 98% experience to your customers.",
     "whyChooseUs": [
       {
         "icon": "MapPin",
@@ -1964,7 +1964,7 @@ const rawServices = [
         "icon": "Users",
         "problem": "Poor Support",
         "solution": "AI Chatbots",
-        "benefit": "Improve Customer Experience & 24/7 Support"
+        "benefit": "Improve Customer Experience & 98% Support"
       },
       {
         "icon": "BarChart",
@@ -2004,7 +2004,7 @@ const rawServices = [
       {
         "icon": "MessageSquare",
         "title": "AI Chatbot Development",
-        "desc": "Intelligent conversational agents for 24/7 customer support."
+        "desc": "Intelligent conversational agents for 98% customer support."
       },
       {
         "icon": "Database",
@@ -2090,7 +2090,7 @@ const rawServices = [
       },
       {
         "q": "Do you build custom AI Chatbots?",
-        "a": "Yes, we develop intelligent AI Chatbots tailored for websites, WhatsApp, and social media platforms to handle customer inquiries 24/7."
+        "a": "Yes, we develop intelligent AI Chatbots tailored for websites, WhatsApp, and social media platforms to handle customer inquiries 98%."
       },
       {
         "q": "What tools do you use for workflow automation?",
@@ -2106,6 +2106,208 @@ const rawServices = [
       }
     ]
   }
+,
+  {
+  "id": "performance-marketing-company-in-bhopal",
+  "title": "Performance Marketing Company in Bhopal | Digitalonix",
+  "description": "ROI Focused Performance Marketing Agency in Bhopal. We specialize in Paid Campaign Optimization, Lead Generation, and Revenue Scaling.",
+  "h1": "Performance Marketing Company in Bhopal",
+  "subtitle": "Data-driven performance marketing designed to scale revenue. We turn your ad spend into measurable, scalable ROI through advanced tracking and funnel optimization.",
+  "heroImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+  "overview": "Our performance marketing services are designed around one metric: your return on investment. As a leading performance marketing agency in Bhopal, we bypass vanity metrics and focus entirely on revenue-driven campaigns. By leveraging advanced data tracking, multi-platform ads, and rigorous conversion optimization, we scale your business efficiently.<br/><br/><strong>Explore related services:</strong> <a href='/digital-marketing-company-in-bhopal' class='text-purple-600 font-medium hover:underline'>Digital Marketing</a>, <a href='/google-ads-agency-in-bhopal' class='text-purple-600 font-medium hover:underline'>Google Ads</a>, and <a href='/ai-automation-company-in-bhopal' class='text-purple-600 font-medium hover:underline'>AI Automation</a>.",
+  "whoNeedsIt": "E-commerce stores, service-based businesses, and brands aiming to scale lead generation and sales rapidly through paid acquisitions.",
+  "impact": "Drive immediate, trackable revenue and decrease customer acquisition costs (CPA) while scaling multi-platform campaigns.",
+  "whyChooseUs": [
+    {
+      "icon": "Database",
+      "title": "Data-Driven Approach",
+      "desc": "Every decision is backed by solid analytics and conversion data."
+    },
+    {
+      "icon": "Target",
+      "title": "ROI-Focused Execution",
+      "desc": "We optimize for maximum Return on Ad Spend (ROAS)."
+    },
+    {
+      "icon": "Eye",
+      "title": "Transparent Reporting",
+      "desc": "Clear, honest metrics showing exactly how your budget performs."
+    },
+    {
+      "icon": "TrendingUp",
+      "title": "Scalable Strategies",
+      "desc": "Campaigns designed to maintain efficiency as budget grows."
+    },
+    {
+      "icon": "Users",
+      "title": "Experienced Team",
+      "desc": "A dedicated marketing team handling complex ad ecosystems."
+    }
+  ],
+  "problems": [
+    {
+      "icon": "DollarSign",
+      "problem": "High Customer Acquisition Costs (CPA)",
+      "solution": "We implement advanced audience targeting and bidding strategies to lower your CPA.",
+      "benefit": "Lower CPA"
+    },
+    {
+      "icon": "Activity",
+      "problem": "Poor Conversion Rates",
+      "solution": "We optimize landing pages and ad copy to ensure maximum conversion efficiency.",
+      "benefit": "Better Conversion Rate"
+    },
+    {
+      "icon": "TrendingDown",
+      "problem": "Stagnant Revenue Growth",
+      "solution": "We uncover new scalable paid acquisition channels across Meta, Google, and YouTube.",
+      "benefit": "Scalable Revenue"
+    },
+    {
+      "icon": "PieChart",
+      "problem": "Low Return on Ad Spend (ROAS)",
+      "solution": "Rigorous A/B testing and retargeting campaigns to maximize the value of every dollar spent.",
+      "benefit": "Higher ROAS"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Audience & Data Setup",
+      "desc": "We establish bulletproof conversion tracking and analyze your ideal customer profile."
+    },
+    {
+      "step": "02",
+      "title": "Funnel Optimization",
+      "desc": "Designing frictionless paths from ad click to final purchase or lead capture."
+    },
+    {
+      "step": "03",
+      "title": "Campaign Launch",
+      "desc": "Deploying multi-platform campaigns with tailored creatives and precise targeting."
+    },
+    {
+      "step": "04",
+      "title": "A/B Testing & CRO",
+      "desc": "Continuous split-testing of ads, audiences, and landing pages to improve metrics."
+    },
+    {
+      "step": "05",
+      "title": "Scaling Winners",
+      "desc": "Aggressively scaling profitable campaigns while killing underperforming ones."
+    },
+    {
+      "step": "06",
+      "title": "Transparent Reporting",
+      "desc": "Regular performance check-ins focused purely on revenue and ROI."
+    }
+  ],
+  "servicesIncluded": [
+    {
+      "icon": "Megaphone",
+      "title": "Paid Ads Strategy & Management",
+      "desc": "Comprehensive management across Google, Meta, and YouTube."
+    },
+    {
+      "icon": "LineChart",
+      "title": "Conversion Tracking Setup",
+      "desc": "Server-side tracking and advanced analytics configuration."
+    },
+    {
+      "icon": "Filter",
+      "title": "Funnel Optimization",
+      "desc": "Removing bottlenecks in your customer journey to boost sales."
+    },
+    {
+      "icon": "Repeat",
+      "title": "Retargeting Campaigns",
+      "desc": "Capturing lost traffic with high-intent follow-up sequences."
+    },
+    {
+      "icon": "SplitSquareHorizontal",
+      "title": "A/B Testing & CRO",
+      "desc": "Relentless optimization of creatives and landing pages."
+    },
+    {
+      "icon": "Layers",
+      "title": "Multi-Platform Campaigns",
+      "desc": "Omnichannel approach to dominate your market share."
+    }
+  ],
+  "techStack": [
+    "Google Ads",
+    "Meta Ads",
+    "Google Analytics 4",
+    "Google Tag Manager",
+    "Looker Studio",
+    "Mixpanel"
+  ],
+  "caseStudy": {
+    "challenge": "An e-commerce brand struggled with a high CPA of $45 and stagnant growth.",
+    "strategy": "We revamped their tracking, implemented dynamic retargeting, and restructured their Google Performance Max campaigns.",
+    "implementation": "Launched rigorous A/B testing on ad creatives and optimized landing page speed and layout.",
+    "results": "Decreased CPA by 40% and scaled monthly revenue by 210%.",
+    "metrics": "+210% Revenue Growth | -40% CPA"
+  },
+  "pricing": [
+    {
+      "name": "Growth Starter",
+      "price": "Custom",
+      "period": "Monthly",
+      "features": [
+        "Google Ads Management",
+        "Basic Conversion Tracking",
+        "Monthly Reporting",
+        "Ad Copy Creation"
+      ]
+    },
+    {
+      "name": "Performance Scale",
+      "price": "Custom",
+      "period": "Monthly",
+      "popular": true,
+      "features": [
+        "Google + Meta Ads",
+        "Advanced Server-Side Tracking",
+        "A/B Testing",
+        "Bi-Weekly Reporting",
+        "Funnel Optimization"
+      ]
+    },
+    {
+      "name": "Omnichannel Domination",
+      "price": "Custom",
+      "period": "Monthly",
+      "features": [
+        "All Ad Platforms",
+        "Full CRO Services",
+        "Custom Dashboard",
+        "Dedicated Strategist",
+        "Priority Support"
+      ]
+    }
+  ],
+  "faqs": [
+    {
+      "q": "What is the difference between digital marketing and performance marketing?",
+      "a": "While digital marketing includes branding and general awareness, performance marketing focuses strictly on measurable outcomes like leads, sales, and ROI."
+    },
+    {
+      "q": "How long does it take to see ROI?",
+      "a": "Depending on the existing data and tracking, significant improvements can usually be seen within the first 30 to 60 days of optimization."
+    },
+    {
+      "q": "Which platforms do you use for performance marketing?",
+      "a": "We utilize Google Ads, Meta Ads (Facebook & Instagram), YouTube, LinkedIn, and advanced tracking tools like GA4 and GTM."
+    },
+    {
+      "q": "Do you provide transparent reporting?",
+      "a": "Yes, we build live dashboards so you can track your KPIs, CPA, and ROAS in real-time."
+    }
+  ],
+  "primaryCta": "Get Free Consultation",
+  "secondaryCta": "Call Now"
+}
 ];
 
 export const servicesData = rawServices.reduce((acc, service) => {

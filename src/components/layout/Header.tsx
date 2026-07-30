@@ -7,6 +7,7 @@ import Logo from '@/components/Logo';
 
 const services = [
   { name: 'Digital Marketing', path: '/digital-marketing-company-in-bhopal' },
+  { name: 'Performance Marketing', path: '/performance-marketing-company-in-bhopal' },
   { name: 'AI Automations', path: '/ai-automation-company-in-bhopal' },
   { name: 'Paid Ads', path: '/google-ads-agency-in-bhopal' },
   { name: 'Social Media Marketing', path: '/social-media-marketing-company-in-bhopal' },

@@ -65,13 +65,13 @@ export default function ServiceHero({ data }: { data: ServiceData }) {
                 <div className="text-sm text-gray-400">Response Time</div>
               </div>
               <div>
-                <div className="text-white font-semibold mb-1">10+ Years</div>
+                <div className="text-white font-semibold mb-1">3+ Years</div>
                 <div className="text-sm text-gray-400">Of Experience</div>
               </div>
               <div>
                 <div className="flex items-center gap-2 text-white font-semibold mb-1">
                   <Users className="w-4 h-4 text-purple-400" />
-                  <span>500+</span>
+                  <span>200+</span>
                 </div>
                 <div className="text-sm text-gray-400">Clients Served</div>
               </div>

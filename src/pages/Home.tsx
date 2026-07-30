@@ -51,7 +51,7 @@ const features = [
   { icon: Lock, title: 'Transparent & Trustworthy', desc: 'No hidden fees or confusing jargon. We maintain clear communication throughout the entire process.' },
   { icon: Lightbulb, title: 'Innovation-Led Solutions', desc: 'We stay ahead of the curve, utilizing the latest technologies to give your business a competitive edge.' },
   { icon: Users, title: 'Dedicated Account Managers', desc: 'You get a single point of contact who understands your business and acts as your internal advocate.' },
-  { icon: Clock, title: '24/7 Support', desc: 'Digital landscapes never sleep, and neither does our commitment to your continuous success.' }
+  { icon: Clock, title: '98% Support', desc: 'Digital landscapes never sleep, and neither does our commitment to your continuous success.' }
 ];
 
 const industries = [
@@ -193,7 +193,7 @@ export default function Home() {
                 { label: 'Projects Delivered', value: 200, suffix: '+', suffixColor: 'text-yellow-400' },
                 { label: 'Happy Clients', value: 150, suffix: '+', suffixColor: 'text-yellow-400' },
                 { label: 'Google Rating', value: 4.9, suffix: '★', decimals: 1, suffixColor: 'text-yellow-400' },
-                { label: 'Support Available', value: 24, suffix: '/7', suffixColor: 'text-white' }
+                { label: 'Client Retention Rate', value: 98, suffix: '%', suffixColor: 'text-white' }
               ].map((stat, i) => (
                 <motion.div 
                   key={i} 
@@ -273,7 +273,7 @@ export default function Home() {
                   'Expert Team of 10+ Professionals',
                   'ISO-Certified Quality Processes',
                   '95% Client Satisfaction Guarantee',
-                  '24/7 Dedicated Support'
+                  '98% Dedicated Support'
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-purple-600 shrink-0 mt-0.5" />
@@ -539,7 +539,7 @@ export default function Home() {
             className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-white border-t border-white/10 pt-12 max-w-3xl mx-auto"
           >
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="text-center">
-              <div className="text-3xl font-bold mb-1"><CountUp to={200} />+</div>
+              <div className="text-3xl font-bold mb-1"><CountUp to={200} /><span className="text-yellow-400">+</span></div>
               <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Projects</div>
             </motion.div>
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="w-px h-10 bg-white/20 hidden md:block"></motion.div>
@@ -549,8 +549,8 @@ export default function Home() {
             </motion.div>
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="w-px h-10 bg-white/20 hidden md:block"></motion.div>
             <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } } }} className="text-center">
-              <div className="text-3xl font-bold mb-1"><CountUp to={24} />/7</div>
-              <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Support</div>
+              <div className="text-3xl font-bold mb-1"><CountUp to={98} /><span className="text-yellow-400">%</span></div>
+              <div className="text-xs text-purple-200 uppercase tracking-wider font-semibold">Client Retention Rate</div>
             </motion.div>
           </motion.div>
         </div>

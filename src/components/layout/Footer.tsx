@@ -41,6 +41,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold text-lg mb-6">Our Services</h3>
             <ul className="space-y-4">
               <li><Link to="/digital-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Digital Marketing</Link></li>
+              <li><Link to="/performance-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Performance Marketing</Link></li>
               <li><Link to="/ai-automation-company-in-bhopal" className="hover:text-purple-400 transition-colors">AI Automations</Link></li>
               <li><Link to="/google-ads-agency-in-bhopal" className="hover:text-purple-400 transition-colors">Paid Ads</Link></li>
               <li><Link to="/social-media-marketing-company-in-bhopal" className="hover:text-purple-400 transition-colors">Social Media Marketing</Link></li>

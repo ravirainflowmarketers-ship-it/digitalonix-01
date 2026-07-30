@@ -23,11 +23,11 @@ export default function ServiceFeatures({ data }: { data: ServiceData }) {
               >
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">About This Service</h2>
                 <div className="prose prose-lg prose-purple">
-                  <p className="text-gray-600 leading-relaxed mb-6">{data.overview}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: data.overview }}></p>
                   <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">Who Needs It?</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">{data.whoNeedsIt}</p>
+                  <p className="text-gray-600 leading-relaxed mb-6" dangerouslySetInnerHTML={{ __html: data.whoNeedsIt }}></p>
                   <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">Business Impact</h3>
-                  <p className="text-gray-600 leading-relaxed">{data.impact}</p>
+                  <p className="text-gray-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: data.impact }}></p>
                 </div>
               </motion.div>
             </div>
