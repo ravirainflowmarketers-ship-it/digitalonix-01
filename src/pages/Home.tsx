@@ -194,7 +194,7 @@ export default function Home() {
                 { label: 'Projects Delivered', value: 200, suffix: '+', suffixColor: 'text-yellow-400' },
                 { label: 'Happy Clients', value: 150, suffix: '+', suffixColor: 'text-yellow-400' },
                 { label: 'Google Rating', value: 4.9, suffix: '★', decimals: 1, suffixColor: 'text-yellow-400' },
-                { label: 'Client Retention Rate', value: 98, suffix: '%', suffixColor: 'text-white' }
+                { label: 'Client Retention Rate', value: 98, suffix: '%', suffixColor: 'text-yellow-400' }
               ].map((stat, i) => (
                 <motion.div 
                   key={i} 
