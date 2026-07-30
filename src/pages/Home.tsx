@@ -25,7 +25,7 @@ import {
   Globe, Edit3, LayoutTemplate, Shield, Plus, Minus,
   HeartPulse, Home as HomeIcon, GraduationCap, ShoppingBag, Landmark, 
   Utensils, Plane, Cpu, Factory, Scale, Dumbbell, Sparkles,
-  Zap, BarChart, Lock, Lightbulb, Users, Clock, BrainCircuit, Target, MapPin, Megaphone, PenTool, Video
+  Zap, BarChart, Lock, Lightbulb, Users, Clock, BrainCircuit, Target, MapPin, Megaphone, PenTool, Video, LineChart
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SEO from '@/components/SEO';
@@ -35,6 +35,7 @@ const services = [
   { icon: TrendingUp, title: 'Digital Marketing', desc: 'Complete digital growth strategies tailored to scale brands online. We combine data, creativity, and performance marketing to drive measurable results.', color: 'bg-red-100 text-red-600', group: 'group-hover:bg-red-600 group-hover:text-white', path: '/digital-marketing-company-in-bhopal' },
   { icon: BrainCircuit, title: 'AI Automations', desc: 'Smart AI-powered systems that automate workflows, lead management, customer responses, and business operations to save time and increase efficiency.', color: 'bg-indigo-100 text-indigo-600', group: 'group-hover:bg-indigo-600 group-hover:text-white', path: '/ai-automation-company-in-bhopal' },
   { icon: Target, title: 'Paid Ads', desc: 'High-converting ad campaigns across Google, Meta, and other platforms designed to maximize ROI and generate quality leads and sales.', color: 'bg-yellow-100 text-yellow-600', group: 'group-hover:bg-yellow-600 group-hover:text-white', path: '/google-ads-agency-in-bhopal' },
+  { icon: LineChart, title: 'Performance Marketing', desc: 'ROI-focused marketing strategies designed to maximize conversions, optimize ad spend, and scale your business profitably.', color: 'bg-sky-100 text-sky-600', group: 'group-hover:bg-sky-600 group-hover:text-white', path: '/performance-marketing-company-in-bhopal' },
   { icon: Share2, title: 'Social Media Marketing', desc: 'Strategic content planning, growth strategies, and engagement techniques to build strong brand presence and loyal communities.', color: 'bg-pink-100 text-pink-600', group: 'group-hover:bg-pink-600 group-hover:text-white', path: '/social-media-marketing-company-in-bhopal' },
   { icon: MapPin, title: 'Google My Business Optimization', desc: 'Optimize and manage your GMB profile to increase local visibility, drive traffic, and generate more local leads.', color: 'bg-emerald-100 text-emerald-600', group: 'group-hover:bg-emerald-600 group-hover:text-white', path: '/google-my-business' },
   { icon: Search, title: 'SEO', desc: 'Data-driven SEO strategies to improve rankings, increase organic traffic, and boost long-term online visibility.', color: 'bg-orange-100 text-orange-600', group: 'group-hover:bg-orange-600 group-hover:text-white', path: '/seo-company-in-bhopal' },
