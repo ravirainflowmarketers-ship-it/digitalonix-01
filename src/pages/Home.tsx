@@ -52,7 +52,7 @@ const features = [
   { icon: Lock, title: 'Transparent & Trustworthy', desc: 'No hidden fees or confusing jargon. We maintain clear communication throughout the entire process.' },
   { icon: Lightbulb, title: 'Innovation-Led Solutions', desc: 'We stay ahead of the curve, utilizing the latest technologies to give your business a competitive edge.' },
   { icon: Users, title: 'Dedicated Account Managers', desc: 'You get a single point of contact who understands your business and acts as your internal advocate.' },
-  { icon: Clock, title: '98% Support', desc: 'Digital landscapes never sleep, and neither does our commitment to your continuous success.' }
+  { icon: Clock, title: 'Long-Term Partnership', desc: 'We don\'t disappear after delivery — we grow with you, every step of the way.' }
 ];
 
 const industries = [
@@ -317,8 +317,49 @@ export default function Home() {
                viewport={{ once: true }}
                transition={{ duration: 0.7 }}
             >
-              <div className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm relative h-full min-h-[400px]">
-                <img src="/images/digital_services.webp" alt="Why Leading Brands Choose Digitalonix" className="w-full h-full object-cover aspect-[4/3] hover:scale-105 transition-transform duration-700" />
+              <div className="rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl bg-white/5 backdrop-blur-sm relative h-full min-h-[400px] flex items-center justify-center">
+                <svg width="100%" height="400px" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full object-contain p-6">
+                  <circle cx="250" cy="200" r="150" fill="#7c3aed" opacity="0.2" filter="blur(40px)" />
+                  <circle cx="350" cy="100" r="100" fill="#8b5cf6" opacity="0.2" filter="blur(30px)" />
+                  
+                  <path d="M 100 300 L 400 300 C 410 300 415 305 410 315 L 90 315 C 85 305 90 300 100 300 Z" fill="#1e1b4b" />
+                  <rect x="130" y="150" width="240" height="150" rx="8" fill="#312e81" stroke="#4c1d95" strokeWidth="4" />
+                  <path d="M 150 270 L 190 230 L 230 250 L 300 180" fill="none" stroke="#8b5cf6" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
+                  <circle cx="300" cy="180" r="6" fill="#fff" />
+                  <rect x="150" y="240" width="20" height="40" rx="2" fill="#7c3aed" opacity="0.6" />
+                  <rect x="180" y="220" width="20" height="60" rx="2" fill="#7c3aed" opacity="0.6" />
+                  <rect x="210" y="250" width="20" height="30" rx="2" fill="#7c3aed" opacity="0.6" />
+                  <rect x="240" y="210" width="20" height="70" rx="2" fill="#7c3aed" opacity="0.6" />
+                  <rect x="270" y="170" width="20" height="110" rx="2" fill="#8b5cf6" />
+                  
+                  <g transform="translate(320, 80) rotate(45)">
+                    <path d="M0,40 C0,40 10,10 20,0 C30,10 40,40 40,40 C40,40 30,30 20,30 C10,30 0,40 0,40 Z" fill="#ffffff" />
+                    <path d="M20,0 C30,10 40,40 40,40 L30,30 L20,30 Z" fill="#e2e8f0" />
+                    <path d="M10,40 L0,60 L20,50 Z" fill="#7c3aed" />
+                    <path d="M30,40 L40,60 L20,50 Z" fill="#8b5cf6" />
+                    <circle cx="20" cy="25" r="4" fill="#1e1b4b" />
+                    <path d="M15,50 C15,50 20,70 25,50 Z" fill="#f59e0b" />
+                  </g>
+                  
+                  <rect x="80" y="180" width="60" height="110" rx="8" fill="#1e1b4b" stroke="#6d28d9" strokeWidth="3" />
+                  <rect x="88" y="190" width="44" height="90" rx="4" fill="#4c1d95" />
+                  <circle cx="110" cy="240" r="15" fill="none" stroke="#8b5cf6" strokeWidth="3" />
+                  <path d="M 110 240 L 115 235" stroke="#fff" strokeWidth="3" strokeLinecap="round" />
+                  
+                  <path d="M 400 150 L 405 160 L 415 165 L 405 170 L 400 180 L 395 170 L 385 165 L 395 160 Z" fill="#fff" opacity="0.8" />
+                  <path d="M 120 100 L 122 106 L 128 108 L 122 110 L 120 116 L 118 110 L 112 108 L 118 106 Z" fill="#8b5cf6" opacity="0.6" />
+                  <path d="M 220 80 L 223 90 L 233 93 L 223 96 L 220 106 L 217 96 L 207 93 L 217 90 Z" fill="#fff" opacity="0.9" />
+                  <circle cx="380" cy="250" r="3" fill="#8b5cf6" />
+                  <circle cx="150" cy="120" r="4" fill="#7c3aed" />
+                  <circle cx="420" cy="100" r="2" fill="#fff" />
+                  
+                  <rect x="360" y="260" width="40" height="25" rx="4" fill="#7c3aed" opacity="0.8" />
+                  <rect x="365" y="265" width="15" height="4" rx="2" fill="#fff" />
+                  <rect x="365" y="275" width="25" height="4" rx="2" fill="#fff" opacity="0.5" />
+                  
+                  <rect x="50" y="120" width="45" height="30" rx="6" fill="#8b5cf6" opacity="0.7" />
+                  <path d="M60 135 L70 140 L85 128" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </div>
             </motion.div>
 

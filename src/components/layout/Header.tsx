@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion, AnimatePresence } from 'framer-motion';
-import Logo from '@/components/Logo';
 
 const services = [
   { name: 'Digital Marketing', path: '/digital-marketing-company-in-bhopal' },
@@ -49,16 +48,11 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3.5 z-50">
-          <Logo className="flex-shrink-0" />
-          <div className="flex flex-col justify-center gap-1">
-            <span className={`text-xl md:text-2xl font-bold tracking-tight leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
-              Digitalonix
-            </span>
-            <span className={`text-[11px] md:text-[13px] font-medium tracking-wide leading-none ${isScrolled || mobileMenuOpen ? 'text-gray-600' : 'text-white/90'}`}>
-              Your Path to Digital Dominance
-            </span>
-          </div>
+        <Link to="/" className="flex items-center gap-3 z-50">
+          <img src="/Digitalonix_final_logo_500500__2_.png" alt="Digitalonix Logo" style={{ height: '55px', width: 'auto', objectFit: 'contain', verticalAlign: 'middle' }} />
+          <span className={`text-[22px] font-bold ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
+            Digitalonix
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
