@@ -85,13 +85,26 @@ export default function ServiceHero({ data }: { data: ServiceData }) {
             className="w-full lg:w-1/2 relative"
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-[2.5rem] blur-3xl opacity-20 animate-pulse"></div>
-            <div className="relative rounded-[2rem] overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl">
-              <img 
-                src={data.heroImage} 
-                alt={data.h1}
-                className="w-full h-full object-cover aspect-[4/3] transform transition-transform duration-700 hover:scale-105"
-                loading="lazy"
-              />
+            <div className="relative rounded-[2rem] overflow-hidden border border-gray-800 bg-gray-900 shadow-2xl flex items-center justify-center min-h-[400px]">
+              {data.id === 'google-ads-agency-in-bhopal' || data.id === 'digital-marketing-company-in-bhopal' ? (
+                <img src="/Digital_Marketing.png" 
+                     alt="Digital Marketing Illustration" 
+                     style={{
+                        width: '100%', 
+                        height: 'auto', 
+                        maxHeight: '380px', 
+                        objectFit: 'contain', 
+                        borderRadius: '12px',
+                        background: 'transparent'
+                     }} />
+              ) : (
+                <img 
+                  src={data.heroImage} 
+                  alt={data.h1}
+                  className="w-full h-full object-cover aspect-[4/3] transform transition-transform duration-700 hover:scale-105"
+                  loading="lazy"
+                />
+              )}
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-transparent to-transparent pointer-events-none"></div>
               
               {/* Floating UI Element */}

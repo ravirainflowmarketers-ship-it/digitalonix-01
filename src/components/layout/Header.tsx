@@ -49,7 +49,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 z-50">
-          <img src="/Digitalonix_final_logo_500500__2_.png" alt="Digitalonix Logo" style={{ height: '55px', width: 'auto', objectFit: 'contain', verticalAlign: 'middle' }} />
+          <img src="/logo.png" alt="Digitalonix Logo" style={{ height: '55px', width: 'auto', objectFit: 'contain', verticalAlign: 'middle' }} />
           <span className={`text-[22px] font-bold ${isScrolled || mobileMenuOpen ? 'text-gray-900' : 'text-white'}`}>
             Digitalonix
           </span>
